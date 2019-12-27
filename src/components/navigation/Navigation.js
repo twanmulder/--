@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navigation.scss";
 
 class Navigation extends React.Component {
   render() {
@@ -11,20 +10,20 @@ class Navigation extends React.Component {
             <img src=""></img>
             LOGO
           </a>
-          <ul>
-            <li>
+          <ul className="navigation-list">
+            <li className="navigation-item">
               <Link to="#services">Services</Link>
             </li>
-            <li>
+            <li className="navigation-item">
               <Link to="#clients">Clients</Link>
             </li>
-            <li>
+            <li className="navigation-item">
               <Link to="#careers">Careers</Link>
             </li>
-            <li>
+            <li className="navigation-item">
               <Link to="#about">About</Link>
             </li>
-            <li>
+            <li className="navigation-item navigation-item--highlight">
               <Link to="#contact">Contact</Link>
             </li>
           </ul>
