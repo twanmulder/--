@@ -3,3 +3,9 @@
 
 @import "./components/app/App.scss";
 @import "./components/navigation/Navigation.scss";
+@import "./components/main/Main.scss";
+
+html,
+body {
+  height: 100%;
+}
