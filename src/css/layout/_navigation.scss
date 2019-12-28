@@ -26,7 +26,7 @@ header {
 }
 
 .navigation-item {
-  padding: 8px 22px;
+  padding: 8px 28px;
   border-radius: 25px;
 
   a {
@@ -101,6 +101,7 @@ header {
 
   .navigation-item {
     cursor: pointer;
+    padding: 8px 22px;
 
     a {
       position: relative;
@@ -130,6 +131,9 @@ header {
       }
       &.navigation-item--highlight {
         background-color: color(primary, 2);
+        a {
+          color: color(typography, 1i);
+        }
       }
     }
 
