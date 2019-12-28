@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 class Main extends React.Component {
   render() {
@@ -15,8 +15,8 @@ class Main extends React.Component {
           <div className="header-image"></div>
         </section>
       </main>
-    );
+    )
   }
 }
 
-export default Main;
+export default Main
