@@ -1,14 +1,15 @@
 .hero {
-  height: 100%;
   display: flex;
 }
 
 .hero-textwrapper {
   width: 55%;
+  display: flex;
+  align-items: center;
 }
 
 .hero-text {
-  // margin: 23rem 0 23rem 6rem;
+  padding-left: 4rem;
 
   h4 {
     color: $font-grey;
@@ -21,7 +22,7 @@
   h1 {
     font-size: 58px;
     font-family: $title-font;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   a {
