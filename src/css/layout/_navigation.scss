@@ -16,6 +16,12 @@ nav {
   justify-content: space-between;
 }
 
+.navigation-logo {
+  @include font-size(6, desktop, true, true, true);
+  @include font-weight(bold);
+  text-decoration: none;
+}
+
 .navigation-list {
   display: flex;
   -webkit-box-align: center;
@@ -24,7 +30,7 @@ nav {
 }
 
 .navigation-item {
-  padding: 10px 22px;
+  padding: 8px 22px;
   border-radius: 25px;
   cursor: pointer;
 

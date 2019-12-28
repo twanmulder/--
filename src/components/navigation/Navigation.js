@@ -6,7 +6,7 @@ class Navigation extends React.Component {
     return (
       <header>
         <nav>
-          <a>
+          <a className="navigation-logo">
             <img src=""></img>
             LOGO
           </a>
