@@ -1,12 +1,11 @@
 header {
   @include font-family(base);
-  height: $navigation-height;
+  height: 60px;
   color: color(typography, 1);
 }
 
-nav {
+.navigation {
   @include font-size(8, mobile, true, true);
-  max-width: 90%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -16,69 +15,135 @@ nav {
   justify-content: space-between;
 }
 
+.navigation--desktop {
+  display: none;
+}
+
 .navigation-logo {
   @include font-size(6, desktop, true, true, true);
   @include font-weight(bold);
   text-decoration: none;
 }
 
-.navigation-list {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  list-style: none;
-}
-
 .navigation-item {
   padding: 8px 22px;
   border-radius: 25px;
-  cursor: pointer;
 
   a {
-    position: relative;
-    font-weight: 700;
-    letter-spacing: 0.6px;
+    @include font-weight(bold);
     text-decoration: none;
     text-transform: uppercase;
   }
+}
 
-  &:not(.navigation-item--highlight) {
-    a:before {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -4px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: color(primary, 1);
-      transition: width 0.2s ease-in-out, color 0.2s ease-in-out;
-    }
+.navigation-item--highlight {
+  background-color: color(primary, 1);
+  transition: background-color 0.2s ease-in-out;
+
+  a {
+    color: color(typography, 1i);
+  }
+}
+
+.navigation--mobile {
+  padding: 0 1rem;
+
+  svg {
+    cursor: pointer;
   }
 
-  &:hover {
-    a {
-      color: color(typography, 2);
+  .navigation-list {
+    @include font-size(3, mobile, true, true);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: color(bg, 1);
+    z-index: 99999;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s height ease-in-out, 0.3s padding ease-in-out;
+  }
+  .navigation-list--open {
+    height: calc(100% - 60px);
+    padding: 4rem 6rem 6rem 6rem;
+  }
+  .navigation-list--closed {
+    height: 0;
+    padding: 0;
+  }
+}
 
-      &:before {
-        width: 100%;
+@include media(">medium") {
+  header {
+    height: 75px;
+  }
+
+  .navigation--mobile {
+    display: none;
+  }
+  .navigation--desktop {
+    @include font-size(8, desktop, true, true, false, -2);
+    display: flex;
+    max-width: 90%;
+  }
+
+  .navigation-list {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .navigation-item {
+    cursor: pointer;
+
+    a {
+      position: relative;
+    }
+
+    &:not(.navigation-item--highlight) {
+      a:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: color(primary, 1);
+        transition: width 0.2s ease-in-out, color 0.2s ease-in-out;
       }
     }
-    &.navigation-item--highlight {
-      background-color: color(primary, 2);
+
+    &:hover {
+      a {
+        color: color(typography, 2);
+
+        &:before {
+          width: 100%;
+        }
+      }
+      &.navigation-item--highlight {
+        background-color: color(primary, 2);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.2rem;
     }
   }
+}
 
-  &.navigation-item--highlight {
-    background-color: color(primary, 1);
-    transition: background-color 0.2s ease-in-out;
-
-    a {
-      color: color(typography, 1i);
-    }
+@include media(">large") {
+  .navigation--desktop {
+    @include font-size(8, desktop, true, true);
   }
-
-  &:not(:last-child) {
+  .navigation-item:not(:last-child) {
     margin-right: 0.8125rem;
   }
 }
