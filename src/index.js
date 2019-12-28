@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
-import "./index.scss"
+import "./css/style.scss"
 import App from "./components/app/App"
 import * as serviceWorker from "./serviceWorker"
 

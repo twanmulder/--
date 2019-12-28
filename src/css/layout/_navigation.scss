@@ -1,7 +1,7 @@
 header {
   height: $navigation-height;
-  color: $font-black;
-  font-family: $body-font;
+  color: color(typography, 1);
+  @include font-family(base);
 }
 
 nav {
@@ -30,7 +30,6 @@ nav {
 
   a {
     position: relative;
-    color: $font-black;
     font-weight: 700;
     letter-spacing: 0.6px;
     text-decoration: none;
@@ -46,30 +45,30 @@ nav {
       bottom: -4px;
       left: 50%;
       transform: translateX(-50%);
-      background: $accent-color;
+      background: color(primary, 1);
       transition: width 0.2s ease-in-out, color 0.2s ease-in-out;
     }
   }
 
   &:hover {
     a {
-      color: $font-darkGrey;
+      color: color(typography, 2);
 
       &:before {
         width: 100%;
       }
     }
     &.navigation-item--highlight {
-      background-color: $accent-color--dark;
+      background-color: color(primary, 2);
     }
   }
 
   &.navigation-item--highlight {
-    background-color: $accent-color;
+    background-color: color(primary, 1);
     transition: background-color 0.2s ease-in-out;
 
     a {
-      color: $font-white;
+      color: color(typography, 1i);
     }
   }
 
