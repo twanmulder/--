@@ -1,4 +1,5 @@
 @import "./scss/reset.scss";
+@import "./scss/variables.scss";
 @import "./scss/typography.scss";
 
 @import "./components/app/App.scss";
@@ -6,6 +7,7 @@
 @import "./components/main/Main.scss";
 
 html,
-body {
+body,
+#root {
   height: 100%;
 }

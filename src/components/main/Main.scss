@@ -1,15 +1,14 @@
-.header {
-  display: flex;
+.hero {
   height: 100%;
-  margin: auto;
+  display: flex;
 }
 
-.header-textwrapper {
-  flex: 1 1 0px;
+.hero-textwrapper {
+  width: 55%;
 }
 
-.header-text {
-  margin: 23rem 0 23rem 6rem;
+.hero-text {
+  // margin: 23rem 0 23rem 6rem;
 
   h4 {
     color: $font-grey;
@@ -47,8 +46,14 @@
   }
 }
 
-.header-image {
-  flex: 0.7 1 0px;
+.hero-image {
   background-color: $accent-color;
-  width: 40%;
+  position: relative;
+  width: 45%;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
 }
