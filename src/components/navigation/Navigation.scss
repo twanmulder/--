@@ -47,12 +47,14 @@ nav {
       left: 50%;
       transform: translateX(-50%);
       background: $accent-color;
-      transition: width 0.2s ease-in-out;
+      transition: width 0.2s ease-in-out, color 0.2s ease-in-out;
     }
   }
 
   &:hover {
     a {
+      color: $font-darkGrey;
+
       &:before {
         width: 100%;
       }
