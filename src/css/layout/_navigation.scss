@@ -1,19 +1,19 @@
 header {
+  @include font-family(base);
   height: $navigation-height;
   color: color(typography, 1);
-  @include font-family(base);
 }
 
 nav {
+  @include font-size(8, mobile, true, true);
   max-width: 90%;
-  display: flex;
   height: 100%;
+  margin: auto;
+  display: flex;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  font-size: 0.8125rem;
-  margin: auto;
 }
 
 .navigation-list {
