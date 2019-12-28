@@ -7,7 +7,7 @@ class Main extends React.Component {
         <section className="hero">
           <div className="hero-textwrapper">
             <div className="hero-text">
-              <h4>Featured Project</h4>
+              <h6>Featured Project</h6>
               <h1>Featured Project Title</h1>
               <a href="#exploremore">Explore more</a>
             </div>
