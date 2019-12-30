@@ -11,6 +11,11 @@ class Main extends React.Component {
               <h1>Featured Project Title</h1>
               <a href="#exploremore">Explore more</a>
             </div>
+            <div className="hero-slider-controls">
+              <div className="slider-timer"></div>
+              <div className="slider-pagination"></div>
+              <div className="slider-controls"></div>
+            </div>
           </div>
           <div className="hero-image"></div>
         </section>
