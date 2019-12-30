@@ -5,19 +5,18 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showHideNav: "navigation-list--closed",
+      showHideNav: false,
     }
   }
 
   toggleNav() {
-    var css =
-      this.state.showHideNav === "navigation-list--closed"
-        ? "navigation-list--open"
-        : "navigation-list--closed"
-    this.setState({ showHideNav: css })
+    this.setState(prevState => ({
+      showHideNav: !prevState.showHideNav,
+    }))
   }
 
   render() {
+    const isNavShown = this.state.showHideNav
     return (
       <header>
         {/* MOBILE NAVIGATION */}
@@ -43,8 +42,11 @@ class Navigation extends React.Component {
             ></path>
           </svg>
           <ul
-            // className="navigation-list navigation-list--open"
-            className={"navigation-list " + this.state.showHideNav}
+            className={
+              isNavShown
+                ? " navigation-list navigation-list--open"
+                : "navigation-list navigation-list--closed"
+            }
           >
             <li className="navigation-item">
               <Link to="#services">Services</Link>
