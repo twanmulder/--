@@ -27,6 +27,7 @@
   a {
     @include font-family(heading);
     @include font-weight(bold);
+    display: inline-block;
     padding: 12px 32px;
     text-decoration: none;
     color: color(typography, 1i);
