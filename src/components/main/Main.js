@@ -1,11 +1,13 @@
 import React from "react"
 
 import Hero from "../hero/Hero"
+import HeroSugg from "../heroSugg/HeroSugg"
 
 function Main() {
   return (
     <main>
-      <Hero />
+      {/* <Hero /> */}
+      <HeroSugg />
     </main>
   )
 }

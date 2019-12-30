@@ -1,0 +1,71 @@
+.hero {
+  padding: 0 2rem;
+}
+
+.hero-text {
+  padding: 4rem 0;
+  text-align: center;
+
+  h1 {
+    @include font-weight(bold);
+  }
+}
+
+.hero-image {
+  margin: 0 1rem;
+  height: 50vh;
+  margin: 0 auto;
+  background-color: color(primary, 1);
+}
+
+.hero-CTAs {
+  padding: 2rem 0 4rem 0;
+}
+
+.hero-CTA {
+  padding: 0.8rem 1.5rem 0.8rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+
+  &:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+
+  &.hero-CTA--primary {
+    @include font-weight(bold);
+    background-color: color(primary, 1);
+    color: color(typography, 1i);
+  }
+
+  &.hero-CTA--secondary {
+    color: color(typography, 3);
+  }
+}
+
+@include media(">medium") {
+  .hero {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    padding: 10rem 0;
+  }
+
+  .hero-CTAs {
+    text-align: center;
+  }
+
+  .hero-CTA {
+    display: inline-block;
+    border-radius: 25px;
+  }
+}
+
+@include media(">large") {
+  .hero-text {
+    padding: 12rem 0;
+  }
+}
