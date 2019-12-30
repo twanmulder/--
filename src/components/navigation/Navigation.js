@@ -9,7 +9,7 @@ class Navigation extends React.Component {
     }
   }
 
-  toggleNav() {
+  toggleNav = () => {
     this.setState(prevState => ({
       showHideNav: !prevState.showHideNav,
     }))
@@ -27,7 +27,7 @@ class Navigation extends React.Component {
           </a>
           {/* HAMBURGER ICON */}
           <svg
-            onClick={this.toggleNav.bind(this)}
+            onClick={this.toggleNav}
             width="20"
             height="20"
             viewBox="0 0 20 20"
