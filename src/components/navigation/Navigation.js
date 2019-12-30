@@ -12,8 +12,8 @@ function Navigation() {
     <header>
       {/* MOBILE NAVIGATION */}
       <nav className=" navigation navigation--mobile">
-        <a className="navigation-logo">
-          <img src=""></img>
+        <a className="navigation-logo" href="/">
+          <img src="" alt="Super Secret Logo"></img>
           LOGO
         </a>
         {/* HAMBURGER ICON */}
@@ -40,44 +40,44 @@ function Navigation() {
           }
         >
           <li className="navigation-item">
-            <Link to="#services">Services</Link>
+            <Link to="/">Services</Link>
           </li>
           <li className="navigation-item">
-            <Link to="#clients">Clients</Link>
+            <Link to="/">Clients</Link>
           </li>
           <li className="navigation-item">
-            <Link to="#careers">Careers</Link>
+            <Link to="/">Careers</Link>
           </li>
           <li className="navigation-item">
-            <Link to="#about">About</Link>
+            <Link to="/">About</Link>
           </li>
           <li className="navigation-item navigation-item--highlight">
-            <Link to="#contact">Contact</Link>
+            <Link to="/">Contact</Link>
           </li>
         </ul>
       </nav>
 
       {/* DESKTOP NAVIGATION */}
       <nav className=" navigation navigation--desktop">
-        <a className="navigation-logo">
-          <img src=""></img>
+        <a className="navigation-logo" href="/">
+          <img src="" alt="Super Secret Logo"></img>
           LOGO
         </a>
         <ul className="navigation-list">
           <li className="navigation-item">
-            <Link to="#services">Services</Link>
+            <Link to="/">Services</Link>
           </li>
           <li className="navigation-item">
-            <Link to="#clients">Clients</Link>
+            <Link to="/">Clients</Link>
           </li>
           <li className="navigation-item">
-            <Link to="#careers">Careers</Link>
+            <Link to="/">Careers</Link>
           </li>
           <li className="navigation-item">
-            <Link to="#about">About</Link>
+            <Link to="/">About</Link>
           </li>
           <li className="navigation-item navigation-item--highlight">
-            <Link to="#contact">Contact</Link>
+            <Link to="/">Contact</Link>
           </li>
         </ul>
       </nav>
