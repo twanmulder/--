@@ -15,7 +15,7 @@
   h6 {
     @include font-family(base);
     @include font-weight(bold);
-    color: color(typography, 3);
+    color: color(typography, 4);
     margin-bottom: 20px;
   }
 
