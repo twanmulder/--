@@ -13,7 +13,10 @@ function Navigation() {
       {/* MOBILE NAVIGATION */}
       <nav className=" navigation navigation--mobile">
         <a className="navigation-logo" href="/">
-          <img src="" alt="Super Secret Logo"></img>
+          <img
+            src="https://www.fillmurray.com/18/18"
+            alt="Super Secret Logo"
+          ></img>
           LOGO
         </a>
         {/* HAMBURGER ICON */}
@@ -60,7 +63,10 @@ function Navigation() {
       {/* DESKTOP NAVIGATION */}
       <nav className=" navigation navigation--desktop">
         <a className="navigation-logo" href="/">
-          <img src="" alt="Super Secret Logo"></img>
+          <img
+            src="https://www.fillmurray.com/18/18"
+            alt="Super Secret Logo"
+          ></img>
           LOGO
         </a>
         <ul className="navigation-list">
