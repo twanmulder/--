@@ -26,8 +26,8 @@ function Navigation() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M19 2.14193H0V0.996094H19V2.14193ZM19 8.57552H0V7.42969H19V8.57552ZM0 15.0013H19V13.8555H0V15.0013Z"
             fill="black"
           ></path>
