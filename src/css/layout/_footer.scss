@@ -1,0 +1,42 @@
+footer {
+  @include font-size(8, mobile, true, true);
+  color: color(typography, 3);
+
+  ul {
+    max-width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li {
+      margin: 0.5rem;
+
+      span {
+        color: color(typography, 2);
+      }
+      a {
+        text-decoration: none;
+        transition: 0.125s color ease-in-out;
+
+        &:hover {
+          color: color(typography, 1);
+        }
+      }
+    }
+  }
+}
+
+@include media(">medium") {
+  footer {
+    @include font-size(7, desktop, true, true);
+
+    ul {
+      text-align: left;
+      flex-direction: row;
+    }
+  }
+}
+@include media(">large") {
+}
