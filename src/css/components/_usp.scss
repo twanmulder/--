@@ -2,6 +2,7 @@
   margin-top: 6rem;
   padding: 0 2rem;
   overflow-x: auto;
+  text-align: center;
   scroll-snap-type: x mandatory;
   scroll-padding-left: 2rem;
 }
@@ -11,6 +12,7 @@
   display: inline-flex;
   max-width: none;
   width: auto;
+  text-align: left;
 }
 
 .usp {
@@ -48,13 +50,12 @@
 }
 
 @include media(">medium") {
-  .section-usp {
-    margin-top: 6rem;
-    padding: 0 2rem;
-  }
-
   .usp {
     width: calc(1200px / 3);
+
+    & + .usp {
+      margin-left: 3rem;
+    }
   }
 
   .usp-image {
@@ -63,8 +64,12 @@
     }
   }
 
+  .usp-textWrapper {
+    padding: 2rem 3rem 5rem;
+  }
+
   .usp-title {
-    @include font-size(5, desktop, true, true);
+    @include font-size(4, desktop, true, true);
     margin-bottom: 1rem;
   }
 }

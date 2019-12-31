@@ -7,7 +7,7 @@ function USP() {
         <article className="usp">
           <div className="usp-image"></div>
           <div className="usp-textWrapper">
-            <h4 className="usp-title"> We can do this for you</h4>
+            <h4 className="usp-title">We can do this for you</h4>
             <p className="usp-text">
               We're really good at doing this certain thing, it's true!
             </p>
@@ -17,7 +17,7 @@ function USP() {
         <article className="usp">
           <div className="usp-image"></div>
           <div className="usp-textWrapper">
-            <h4 className="usp-title"> We can do this for you</h4>
+            <h4 className="usp-title">Also, we can do this really good</h4>
             <p className="usp-text">
               We're really good at doing this certain thing, it's true!
             </p>
@@ -27,7 +27,7 @@ function USP() {
         <article className="usp">
           <div className="usp-image"></div>
           <div className="usp-textWrapper">
-            <h4 className="usp-title"> We can do this for you</h4>
+            <h4 className="usp-title">We can do this for you</h4>
             <p className="usp-text">
               We're really good at doing this certain thing, it's true!
             </p>
