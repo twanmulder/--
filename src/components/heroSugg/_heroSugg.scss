@@ -37,10 +37,20 @@
     @include font-weight(bold);
     background-color: color(primary, 1);
     color: color(typography, 1i);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: color(primary, 2);
+    }
   }
 
   &.hero-CTA--secondary {
     color: color(typography, 3);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: color(typography, 2);
+    }
   }
 }
 
@@ -67,6 +77,6 @@
 
 @include media(">large") {
   .hero-text {
-    padding: 12rem 0;
+    padding: 28vh 0;
   }
 }
