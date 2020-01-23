@@ -8,6 +8,36 @@
 
   h1 {
     @include font-weight(bold);
+    display: flex;
+    justify-content: center;
+
+    .word-container {
+      overflow: hidden;
+
+      span {
+        display: block;
+        animation: up 0.8s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translateY(115%);
+      }
+
+      &:nth-child(2) span {
+        animation-delay: 0.65s;
+      }
+      &:nth-child(3) span {
+        animation-delay: 0.8s;
+      }
+    }
+  }
+
+  h4 {
+    animation: fadein 0.8s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
   }
 }
 
@@ -78,5 +108,17 @@
 @include media(">large") {
   .hero-text {
     padding: 28vh 0;
+  }
+}
+
+@keyframes up {
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
   }
 }
