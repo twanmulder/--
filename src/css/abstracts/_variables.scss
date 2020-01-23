@@ -26,14 +26,14 @@ $color: (
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-  base: '"Open Sans", sans-serif',
   // font-family(base)
-    heading: '"Montserrat", sans-serif',
+    base: '"Open Sans", sans-serif',
   // font-family(heading)
-    code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
+    heading: '"Montserrat", sans-serif',
   // font-family(code)
+    code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
+  // font-family(pre)
     pre: '"Courier 10 Pitch", Courier, monospace'
-    // font-family(pre),,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 $font__sizes: (
@@ -50,50 +50,53 @@ $font__sizes: (
 $font__scale: (
   desktop: (
     // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
+      // H1
       1: map-get($font__sizes, alpha),
-    // H1
-      2: map-get($font__sizes, beta),
     // H2
-      3: map-get($font__sizes, gamma),
+      2: map-get($font__sizes, beta),
     // H3
-      4: map-get($font__sizes, delta),
+      3: map-get($font__sizes, gamma),
     // H4, H5, H6
-      5: map-get($font__sizes, epsilon),
+      4: map-get($font__sizes, delta),
     // Body
-      6: map-get($font__sizes, zeta),
+      5: map-get($font__sizes, epsilon),
     // Text small
-      7: map-get($font__sizes, eta),
+      6: map-get($font__sizes, zeta),
     // Text smaller, buttons
-      8: map-get($font__sizes, theta) // Footer area,,,,,,,,,,,,,,,,,,,,,,,,,
+      7: map-get($font__sizes, eta),
+    // Footer area
+      8: map-get($font__sizes, theta),
   ),
   mobile: (
     // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
+      // H1
       1: map-get($font__sizes, beta),
-    // H1
-      2: map-get($font__sizes, gamma),
     // H2
-      3: map-get($font__sizes, delta),
+      2: map-get($font__sizes, gamma),
     // H3
-      4: map-get($font__sizes, epsilon),
+      3: map-get($font__sizes, delta),
     // H4, H5, H6
-      5: map-get($font__sizes, epsilon),
+      4: map-get($font__sizes, epsilon),
     // Body
-      6: map-get($font__sizes, zeta),
+      5: map-get($font__sizes, epsilon),
     // Text small
-      7: map-get($font__sizes, eta),
+      6: map-get($font__sizes, zeta),
     // Text smaller, buttons
-      8: map-get($font__sizes, theta) // Footer area,,,,,,,,,,,,,,,,,,,,,,,,,
+      7: map-get($font__sizes, eta),
+    // Footer area
+      8: map-get($font__sizes, theta),
   ),
 );
 
 $font__weight: (
-  regular: 400,
   // font__weight(regular)
-    medium: 500,
+    regular: 400,
   // font__weight(medium)
-    semibold: 600,
+    medium: 500,
   // font__weight(semibold)
-    bold: 700 // font__weight(bold),,,,,,,,,,,,,,,,,,,,,,,,,
+    semibold: 600,
+  // font__weight(bold)
+    bold: 700
 );
 
 // --------------------------------------------
